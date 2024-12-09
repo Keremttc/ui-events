@@ -90,3 +90,24 @@ a:nth-of-type(12) {
   transition: 0.3s;
   background-color: #22ac47;
 }
+
+
+.bibber{
+  animation-name:bibber;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  background-color: #e8ff15;
+}
+
+@keyframes bibber {
+    0%, 100% { 
+      transform: translateX(0) 
+    }
+    10%, 30%, 50%, 70%, 90% { 
+      transform: translateX(10px) 
+    }
+    20%, 40%, 60%, 80% { 
+      transform: translateX(-10px) 
+    }
+   }

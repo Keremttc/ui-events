@@ -53,3 +53,16 @@ function hover() {
 
   hoverlink.classList.toggle('hoverlink')
 }
+
+
+
+// bibber functie
+let bibberLink = document.querySelector('a:nth-of-type(3)')
+
+bibberLink.addEventListener('dblclick', bibberen)
+
+function bibberen( ){ 
+  bibberLink.classList.toggle('bibber')
+}
+
+bibberLink.addEventListener('animationend',bibberen)
