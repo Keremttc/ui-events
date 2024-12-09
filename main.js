@@ -26,10 +26,30 @@ interaction.addEventListener('animationend', jumpHandler)
 // Maak bijvoorbeeld een bibber animatie als je op iets klikt
 
 // Stap 1: querySelector
-// let bibberLink = document.querySelector...
+let kleurLink = document.querySelector('a:nth-of-type(1)')
+
 
 // Stap 2: addEventListener
-// bibberLink.addEventListener...
+kleurLink.addEventListener('click', kleur)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
+function kleur() {
+
+  kleurLink.classList.toggle('kleur')
+}
+
+
+
+// Stap 1: querySelector
+let hoverlink = document.querySelector('a:nth-of-type(2)')
+
+// // Stap 2: addEventListener
+hoverlink.addEventListener('mouseover', hover)
+
+// // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+// bibberLink.classList.toggle...
+function hover() {
+
+  hoverlink.classList.toggle('hoverlink')
+}

@@ -81,3 +81,12 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
+.kleur{
+  background-color: red;
+}
+
+.hoverlink{
+  opacity: 0.6;
+  transition: 0.3s;
+  background-color: #22ac47;
+}
