@@ -66,3 +66,15 @@ function bibberen( ){
 }
 
 bibberLink.addEventListener('animationend',bibberen)
+
+
+// snellebibber functie
+let snel = document.querySelector('a:nth-of-type(4)')
+
+  snel.addEventListener('click', Jumpie)
+
+function Jumpie( ){ 
+  snel.classList.toggle('springen')
+}
+
+  snel.addEventListener('animationend', Jumpie)
